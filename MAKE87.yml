@@ -1,0 +1,10 @@
+build_kit:
+  name: rust
+  version: latest
+inbound_topics:
+  - name: INCOMING_MESSAGE
+    message_type: ros2_interfaces_rolling.std_msgs.msg.String
+outbound_topics:
+  - name: OUTGOING_MESSAGE
+    message_type: make87_messages.text.PlainText
+needs_host_network: true
